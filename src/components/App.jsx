@@ -1,6 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from '../components/Layout/Layout';
 
 export const App = () => {
-  return <div>React homework template</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}></Route>
+    </Routes>
+  );
 };
